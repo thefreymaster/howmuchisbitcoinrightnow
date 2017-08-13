@@ -1,0 +1,21 @@
+{
+  "name": "str)",
+  "version": "1.0.0",
+  "description": "testing internet speed at GM",
+  "main": "server.js",
+  "dependencies": {
+    "angular-chart.js": "^1.1.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "fast-cli": "^1.0.0",
+    "node-cmd": "^3.0.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Evan Freymiller",
+  "license": "ISC"
+}

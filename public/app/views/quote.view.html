@@ -1,0 +1,36 @@
+<div layout='column' layout-align='center center' layout-padding class='top-margin' ng-class="{'top-margin-md': httpService.screenIsMedium == true, 'top-margin-sm': httpService.screenIsSmall == true, 'top-margin-xs': httpService.screenIsExtraSmall == true}">
+    <div flex='100' class='text' ng-class="{'text-sm': httpService.screenIsSmall == true, 'text-xs': httpService.screenIsExtraSmall == true}">Bitcoin currently is </div>
+    <div flex='100'>
+        <div class='bitcoin' ng-class="{'bitcoin-md': httpService.screenIsMedium == true, 'bitcoin-sm': httpService.screenIsSmall == true, 'bitcoin-xs': httpService.screenIsExtraSmall == true}">${{bitcoin_price}}</div>
+    </div>
+    <div flex='100' class='text' ng-class="{'text-sm': httpService.screenIsSmall == true, 'text-xs': httpService.screenIsExtraSmall == true}">{{time | date: 'medium'}}</div>
+</div>
+
+
+
+
+
+
+
+<!--
+<md-content layout='row' layout-align='center center' layout-wrap flex>
+    <md-card flex='45' ng-if='data[0].length != 0'>
+        <md-card-content>
+            <div class='speed' ng-if='data[0].length != 0'>{{currentSpeed}} Mbs</div>
+        </md-card-content>
+    </md-card>
+    <md-card flex='45' ng-if='data[0].length != 0'>
+        <md-card-content>
+            <canvas chart-colors="colors" id="bar" chart-options="optionsBar" class="chart chart-bar" chart-data="dataBar" chart-labels="labelsBar"
+                chart-series="seriesBar">
+            </canvas>
+        </md-card-content>
+    </md-card>
+    <md-card flex='90' ng-if='data[0].length != 0'>
+        <md-card-content>
+            <canvas chart-colors="colors" id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series"
+                chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick">
+            </canvas </md-card>
+        </md-card-content>
+    </md-card>
+</md-content>

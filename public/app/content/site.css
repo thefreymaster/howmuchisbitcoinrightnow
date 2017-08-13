@@ -1,0 +1,46 @@
+.bitcoin{
+    font-size:300px;
+    font-weight:900;
+    text-align: center;
+}
+.bitcoin-md{
+    font-size:200px;
+    font-weight:900;
+    text-align: center;
+}
+.bitcoin-sm{
+    font-size:150px;
+    font-weight:900;
+    text-align: center;
+}
+.bitcoin-xs{
+    font-size:68px;
+    font-weight:900;
+    text-align: center;
+}
+.text{
+    font-size: 48px;
+    font-weight: 100;
+}
+.text-sm{
+    font-size: 32px;
+    font-weight: 100;
+}
+.text-xs{
+    font-size: 24px;
+    font-weight: 100;
+}
+.top-margin{
+        margin-top: 200px;
+}
+.top-margin-md{
+        margin-top: 200px;
+}
+.top-margin-sm{
+        margin-top: 100px;
+}
+.top-margin-xs{
+        margin-top: 50px;
+}
+
+
