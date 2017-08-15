@@ -1,4 +1,4 @@
-angular.module('bitcoinApp').controller('AppController', ['$scope', '$mdMedia', function($scope, $mdMedia){
+angular.module('bitcoinApp').controller('AppController', ['$scope', '$mdMedia', '$mdSidenav', function($scope, $mdMedia, $mdSidenav){
 
 
         $scope.$mdMedia = $mdMedia;
@@ -9,7 +9,9 @@ angular.module('bitcoinApp').controller('AppController', ['$scope', '$mdMedia', 
         $scope.screenIsLarge = $mdMedia('lg');
 
 
-
+  $scope.openLeftMenu = function() {
+    $mdSidenav('left').toggle();
+  };
 
 
 

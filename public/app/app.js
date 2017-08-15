@@ -4,7 +4,7 @@ var app = angular.module('bitcoinApp', ['ui.router', 'ngMaterial', 'ngMessages',
 $httpProvider.defaults.headers.post['Content-Type'] = 'text/plain'; 
 
 $mdThemingProvider.theme('default')
-    .primaryPalette('blue-grey')
+    .primaryPalette('grey')
     .accentPalette('blue-grey')
     .dark();
 

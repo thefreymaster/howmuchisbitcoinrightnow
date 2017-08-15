@@ -21,17 +21,12 @@
 .text{
     font-size: 48px;
     font-weight: 100;
+        text-align: center;
+
 }
-.text-sm{
-    font-size: 32px;
-    font-weight: 100;
-}
-.text-xs{
-    font-size: 24px;
-    font-weight: 100;
-}
+
 .top-margin{
-        margin-top: 200px;
+        margin-top: 30px;
 }
 .top-margin-md{
         margin-top: 200px;
@@ -41,6 +36,87 @@
 }
 .top-margin-xs{
         margin-top: 100px;
+}
+.gain{
+    color:#5bda90;
+}
+.loss{
+    color:#ff766c;
+}
+.text-metric-percent{
+    font-size: 150px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.text-metric-dollar{
+    font-size: 72px;
+    font-weight: 100;
+    text-align: center;
+
+}
+.text-metric-dollar-sm{
+    font-size: 32px !important;
+    font-weight: 300  !important;
+}
+.text-metric-dollar-xs{
+    font-size: 24px  !important;
+    font-weight: 300  !important;
+}
+.text-metric-percent-sm{
+    font-size: 56px !important;
+    font-weight: 600  !important;
+}
+.text-metric-percent-xs{
+    font-size: 56px !important;
+    font-weight: 600  !important;
+}
+.text-sm{
+    font-size: 32px !important;
+    font-weight: 300  !important;
+}
+.text-xs{
+    font-size: 24px  !important;
+    font-weight: 300  !important;
+}
+.md-48{
+    font-size:48px !important;
+    vertical-align: middle;
+}
+.canvas{
+    background-color: #3b3b3b !important;
+}
+.material-icons.md-18 { 
+    font-size: 18px;
+     vertical-align: middle;
+     padding:5px;
+}
+.md-subheader{
+    margin-bottom:5px;
+}
+a{
+    text-decoration:none !important;
+}
+.md-subheader.md-default-theme, .md-subheader {
+    color: rgba(255,255,255,0.7);
+    background-color: rgb(56, 56, 56);
+}
+.label{
+    background-color: #202020 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.right-margin-correction{
+    margin-right: 15px;
 }
 
 

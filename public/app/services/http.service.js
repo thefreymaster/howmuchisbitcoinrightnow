@@ -22,5 +22,18 @@ angular.module('bitcoinApp').service('httpService', ['$http', '$mdMedia', functi
 
         });
     }
+    service.getYesterdaysBitcoinPrice = function () {
+        return $http.get('/api/yesterday_price').then(function (response) {
+            return response.data;
+
+        });
+    }
+    service.getHistoricBitcoinPrice = function () {
+        return $http.get('/api/historic_price').then(function (response) {
+            return response.data;
+
+        });
+    }
+    
 
 }])

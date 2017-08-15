@@ -30,11 +30,10 @@ app.get('/', function (request, response){
 
 
 app.get('/api/quote', function(req, res){
-        var token = req.query.token;
 
     var options = { 
         method: 'GET',
-        url: 'https://api.coinbase.com/v2/prices/spot?currency=USD'
+        url: 'https://api.coindesk.com/v1/bpi/currentprice.json'
 
         };
 
@@ -46,8 +45,40 @@ app.get('/api/quote', function(req, res){
 
 });
 
+app.get('/api/yesterday_price', function(req, res){
+
+    var options = { 
+        method: 'GET',
+        url: 'https://api.coindesk.com/v1/bpi/historical/close.json?for=yesterday'
+
+        };
+
+    request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+        res.json(JSON.parse(body));
+    });
+
+});
+
+app.get('/api/historic_price', function(req, res){
+
+    var options = { 
+        method: 'GET',
+        url: 'https://api.coindesk.com/v1/bpi/historical/close.json'
+
+        };
+
+    request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+        res.json(JSON.parse(body));
+    });
+
+});
+
+
 app.get('/api/time', function(req, res){
-        var token = req.query.token;
 
     var options = { 
         method: 'GET',
