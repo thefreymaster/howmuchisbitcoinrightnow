@@ -4,7 +4,7 @@
         <div class='bitcoin' ng-class="{'bitcoin-md': httpService.screenIsMedium == true, 'bitcoin-sm': httpService.screenIsSmall == true, 'bitcoin-xs': httpService.screenIsExtraSmall == true}">${{bitcoin_price | number:2}}</div>
     </div>
     <!--<div flex='100' class='text' ng-class="{'text-sm': httpService.screenIsSmall == true, 'text-xs': httpService.screenIsExtraSmall == true}">{{time | date: 'medium'}}</div>-->
-    <div flex='30' flex-xs='100' flex-sm='100' flex-md='100' flex-lg='40' flex-offset-lg='10' flex-offset-md='0' flex-offset='20' flex-offset-xs='0' flex-offset-sm='0' layout='column'>
+    <div flex='30' flex-xs='100' flex-sm='100' flex-md='100' flex-xl='45' flex-offset-xl='5' flex-lg='45' flex-offset-lg='10' flex-offset-md='0' flex-offset='20' flex-offset-xs='0' flex-offset-sm='0' layout='column'>
             <div  class='text-metric-percent' ng-class="{'text-metric-percent-sm': httpService.screenIsSmall == true, 'text-metric-percent-xs': httpService.screenIsExtraSmall == true, 'gain': dollar_change > 0, 'loss': dollar_change < 0}"><i ng-if='dollar_change > 0' class="material-icons gain md-48">change_history</i><i ng-if='dollar_change < 0' class="material-icons loss md-48">details</i> {{percent_change | number:2}}%</div>
             <md-divider></md-divider>
             <div class='text-metric-dollar' ng-class="{'text-metric-dollar-sm': httpService.screenIsSmall == true, 'text-metric-dollar-xs': httpService.screenIsExtraSmall == true, 'gain': dollar_change > 0, 'loss': dollar_change < 0}"><i ng-if='dollar_change > 0' class="material-icons gain md-18">change_history</i><i ng-if='dollar_change < 0' class="material-icons loss md-18">details</i>${{dollar_change | number:2}}</div>
