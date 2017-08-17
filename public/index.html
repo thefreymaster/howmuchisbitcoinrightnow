@@ -53,7 +53,7 @@
     </head>
      <body ng-cloak ng-controller="AppController" layout="column" layout-fill>
         <header>
-            <md-toolbar>
+            <md-toolbar md-whiteframe="1">
 
 
                 <div class="md-toolbar-tools">
@@ -67,7 +67,7 @@
         <main layout="row">
 
             <md-sidenav md-component-id="left" class="md-sidenav-left">
-                <md-toolbar>
+                <md-toolbar md-whiteframe="1">
                     <h1 class="md-toolbar-tools">How Much Is Bitcoin Right Now</h1>
                 </md-toolbar>
                 <md-list>
@@ -90,7 +90,7 @@
                 <div ui-view="speedtestview"></div>
             </md-content>
         </main>
-        <footer>
+        <footer md-whiteframe="1">
             <md-toolbar class="md-scroll-shrink canvas">
                 <div layout="row" layout-align="center center" flex>
                 Canvas 23 Studios <i class="material-icons md-18">copyright</i> 
@@ -119,7 +119,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40570108-4', 'auto');
+  ga('create', 'UA-40570108-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -3,9 +3,18 @@ var app = angular.module('bitcoinApp', ['ui.router', 'ngMaterial', 'ngMessages',
 
 $httpProvider.defaults.headers.post['Content-Type'] = 'text/plain'; 
 
-$mdThemingProvider.theme('default')
-    .primaryPalette('grey')
-    .accentPalette('blue-grey')
+  // For example: raised button text will be black instead of white.
+  var neonRedMap = $mdThemingProvider.extendPalette('red', {
+    '500': '#ff0000',
+    'contrastDefaultColor': 'dark'
+  });
+
+  // Register the new color palette map with the name <code>neonRed</code>
+  $mdThemingProvider.definePalette('neonRed', neonRedMap);
+
+  // Use that theme for the primary intentions
+  $mdThemingProvider.theme('default')
+    .primaryPalette('neonRed')
     .dark();
 
     
