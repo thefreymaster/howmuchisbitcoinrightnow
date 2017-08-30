@@ -57,35 +57,18 @@
 
 
                 <div class="md-toolbar-tools">
-                    <md-button class="md-icon-button" aria-label="Settings" ng-click='openLeftMenu()'>
-                        <i class="material-icons">menu</i>
+                    <img ng-class="{'logo-md': screenIsMedium == true}" src="app/content/logo.svg" class='logo' alt="logo">
+                    <h2 flex>How Much Is Bitcoin Right Now</h2>
+                    <md-button class='md-icon-button' ng-href='https://github.com/thefreymaster/howmuchisbitcoinrightnow' target='_blank'>
+                        <i class="material-icons">storage</i>
+                        <md-tooltip>Github</md-tooltip>
                     </md-button>
-                    <h2 flex md-truncate>How Much Is Bitcoin Right Now</h2>
                 </div>
             </md-toolbar>
         </header>
         <main layout="row">
 
-            <md-sidenav md-component-id="left" class="md-sidenav-left">
-                <md-toolbar md-whiteframe="1">
-                    <h1 class="md-toolbar-tools">How Much Is Bitcoin Right Now</h1>
-                </md-toolbar>
-                <md-list>
-                    <md-subheader class="md-no-sticky label">Canvas 23 Studios</md-subheader>
-                    <md-subheader class="md-no-sticky label">Created by: Evan Freymiller</md-subheader>
-                    <a ng-href='https://www.linkedin.com/in/evan-freymiller-3a41164a/' target="_blank">
-                        <md-subheader  md-ink-ripple="rgb(158,158,158)" class="md-no-sticky" >Linkedin</md-subheader>
-                    </a>
-                    <a ng-href='http://www.evanfreymiller.com'  target="_blank">
-                        <md-subheader md-ink-ripple="rgb(158,158,158)"  class="md-no-sticky">www.evanfreymiller.com</md-subheader>
-                    </a>
-                    <a ng-href='https://github.com/thefreymaster/howmuchisbitcoinrightnow' target="_blank">
-                        <md-subheader md-ink-ripple="rgb(158,158,158)" class="md-no-sticky">Github</md-subheader>
-                    </a>
-                    
-
-                </md-list>
-            </md-sidenav>
+            
             <md-content>
                 <div ui-view="speedtestview"></div>
             </md-content>

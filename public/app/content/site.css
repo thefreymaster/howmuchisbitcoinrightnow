@@ -49,6 +49,9 @@
     text-align: center;
 
 }
+main{
+    min-height:90vh;
+}
 .text-metric-dollar{
     font-size: 48px;
     font-weight: 100;
@@ -103,6 +106,10 @@ a{
 }
 .label{
     background-color: #202020 !important;
+}
+.logo{
+    max-width: 50px;
+    margin-right: 10px;
 }
 
 
