@@ -1,5 +1,5 @@
 .bitcoin{
-    font-size:300px;
+    font-size:200px;
     font-weight:900;
     text-align: center;
 }
@@ -44,13 +44,13 @@
     color:#ff766c;
 }
 .text-metric-percent{
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 600;
     text-align: center;
 
 }
 .text-metric-dollar{
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 100;
     text-align: center;
 

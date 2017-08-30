@@ -18,11 +18,12 @@ angular.module('bitcoinApp').controller('QuoteController', ['$scope', '$mdMedia'
         $scope.bitcoin_price = results.bpi.USD.rate_float;
 
         var yesterdayPromise = $scope.httpService.getYesterdaysBitcoinPrice();
-        yesterdayPromise.then(function(results){
-            
+        yesterdayPromise.then(function(result){
+            console.log(result);
+
             var yesterdayDate = moment().add(-1, 'days');
             yesterdayDate = $filter('date')(yesterdayDate._d, 'yyyy-MM-dd', 'GMT');
-            $scope.yesterdayPrice = results.bpi[yesterdayDate];
+            $scope.yesterdayPrice = result[yesterdayDate];
             $scope.dollar_change = $scope.bitcoin_price-$scope.yesterdayPrice;
             $scope.percent_change = (($scope.bitcoin_price-$scope.yesterdayPrice)/$scope.bitcoin_price)*100;
 
