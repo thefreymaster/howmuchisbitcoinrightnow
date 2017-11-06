@@ -78,21 +78,22 @@ app.get('/api/historic_price', function(req, res){
 });
 
 
-app.get('/api/time', function(req, res){
+// app.get('/api/time', function(req, res){
 
-    var options = { 
-        method: 'GET',
-        url: 'https://api.coinbase.com/v2/time'
+//     var options = { 
+//         method: 'GET',
+//         url: 'https://api.coinbase.com/v2/time'
 
-        };
+//         };
 
-    request(options, function (error, response, body) {
-    if (error) throw new Error(error);
+//     request(options, function (error, response, body) {
+//     if (error) throw new Error(error);
 
-        res.json(JSON.parse(body));
-    });
+//         res.json(JSON.parse(body));
+//     });
 
-});
+// });
+
 
 
 
